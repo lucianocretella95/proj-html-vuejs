@@ -24,13 +24,20 @@ export default {
                         <p>Artist</p>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
-
+                    <div class="date">
+                        <i class="fa-regular fa-calendar"></i> <span>May 15, 2020</span>
+                        <i style="margin-left: 0.5rem;" class="fa-solid fa-eye"></i><span>688 views</span>
+                    </div>
                 </div>
             </div>
             <div class="blog2">
                 <div class="card2">
-                    <p>Artist</p>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p style="color: white;">Artist</p>
+                    <p style="color: white;">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div style="color: white;" class="date">
+                    <i class="fa-regular fa-calendar"></i> <span>May 15, 2020</span>
+                    <i style="margin-left: 0.5rem;" class="fa-solid fa-eye"></i><span>688 views</span>
                 </div>
             </div>
             <div class="blog3">
@@ -40,7 +47,10 @@ export default {
                         <p>Artist</p>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
-
+                    <div class="date">
+                        <i class="fa-regular fa-calendar"></i> <span>May 15, 2020</span>
+                        <i style="margin-left: 0.5rem;" class="fa-solid fa-eye"></i><span>688 views</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,12 +59,59 @@ export default {
             <p style="color: #ef6f31;">View all posts <i class="fa-solid fa-arrow-right"></i></p>
         </div>
     </div>
+    <div class="events">
+        <h3>Upcoming Events</h3>
+        <h5>Let's Work Together</h5>
+        <div class="artist-event">
+            <div class="workers">
+                <div class="artist1">
+                    <img src="../assets/images/artist-event-04-250x300.jpg" alt="">
+                    <div class="text">
+                        <p>testo</p>
+                        <p>testo</p>
+                        <p>testo</p>
+                    </div>
 
+                </div>
+                <div class="artist2">
+                    <img src="../assets/images/artist-event-03-250x300.jpg" alt="" srcset="">
+                    <div class="text">
+                        <p>testo</p>
+                        <p>testo</p>
+                        <p>testo</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="workers-2">
+                <div class="artist3">
+                    <div class="text">
+                        <p>testo</p>
+                        <p>testo</p>
+                        <p>testo</p>
+                    </div>
+                    <img src="../assets/images/artist-event-02-250x300.jpg" alt="">
+
+                </div>
+                <div class="artist4">
+                    <div class="text">
+                        <p>testo</p>
+                        <p>testo</p>
+                        <p>testo</p>
+                    </div>
+                    <img src="../assets/images/artist-event-01-250x300.jpg" alt="" srcset="">
+
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <style scoped>
 p {
     margin: 0;
+    color: black;
 }
 
 h3 {
@@ -71,7 +128,7 @@ h5 {
 
 .images {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 5rem;
 }
 
@@ -87,8 +144,8 @@ h5 {
 
 .blog1,
 .blog3 {
-    width: 100px;
-    height: 150px;
+    width: 200px;
+    height: 250px;
     background-color: white;
 }
 
@@ -117,10 +174,48 @@ h5 {
 
 .blog2 {
     background-image: url(../assets/images/artist-blog-02-500x680.jpg);
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 500px;
+    padding: 6px;
     background-size: cover;
     display: flex;
     align-items: end;
+    flex-direction: column-reverse;
+}
+
+
+.date {
+    color: black;
+    font-size: 0.7rem;
+}
+
+.events {
+    background-color: white;
+}
+
+.artist-event img {
+    width: 150px;
+}
+
+.workers,
+.workers-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.artist1,
+.artist2,
+.artist3,
+.artist4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 </style>
