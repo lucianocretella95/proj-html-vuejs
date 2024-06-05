@@ -16,6 +16,9 @@ export default {
     <div class="articles">
         <h3>Articles and tips</h3>
         <h5>Latest From The Blog</h5>
+        <div class="shape">
+            <img src="../assets/images/maxcoach-shape-03.png" alt="" srcset="">
+        </div>
         <div class="images">
             <div class="blog1">
                 <div class="card1">
@@ -67,18 +70,17 @@ export default {
                 <div class="artist1">
                     <img src="../assets/images/artist-event-04-250x300.jpg" alt="">
                     <div class="text">
-                        <p>testo</p>
-                        <p>testo</p>
-                        <p>testo</p>
+                        <p>NOV 22, 2020</p>
+                        <p>Storytelling Workshop</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Texas, US</p>
                     </div>
-
                 </div>
                 <div class="artist2">
                     <img src="../assets/images/artist-event-03-250x300.jpg" alt="" srcset="">
                     <div class="text">
-                        <p>testo</p>
-                        <p>testo</p>
-                        <p>testo</p>
+                        <p>OCT 10, 2020</p>
+                        <p>Painting Art Contest 2020</p>
+                        <p><i class="fa-solid fa-location-dot"></i> New York, US</p>
                     </div>
                 </div>
             </div>
@@ -87,18 +89,17 @@ export default {
             <div class="workers-2">
                 <div class="artist3">
                     <div class="text">
-                        <p>testo</p>
-                        <p>testo</p>
-                        <p>testo</p>
+                        <p>NOV 23, 2020</p>
+                        <p>International Art Fair 2020</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Hamburg, Germany</p>
                     </div>
                     <img src="../assets/images/artist-event-02-250x300.jpg" alt="">
-
                 </div>
                 <div class="artist4">
                     <div class="text">
-                        <p>testo</p>
-                        <p>testo</p>
-                        <p>testo</p>
+                        <p>DEC 15, 2020</p>
+                        <p>Street Performance: Call Of Artist</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Illinois, US</p>
                     </div>
                     <img src="../assets/images/artist-event-01-250x300.jpg" alt="" srcset="">
 
@@ -140,6 +141,8 @@ h5 {
 
 .articles {
     background-color: #F5F5F5;
+    padding: 0 5rem;
+    position: relative;
 }
 
 .blog1,
@@ -147,11 +150,25 @@ h5 {
     width: 200px;
     height: 250px;
     background-color: white;
+    position: relative;
+    z-index: 500;
+}
+
+.shape {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.shape img {
+    width: 100%;
 }
 
 .card1,
 .card3 {
     width: 100%;
+    z-index: 7;
+    position: relative;
 }
 
 .description {
@@ -181,16 +198,19 @@ h5 {
     display: flex;
     align-items: end;
     flex-direction: column-reverse;
+    z-index: 999;
 }
-
 
 .date {
     color: black;
     font-size: 0.7rem;
+    padding: 2px 2px 2px 6px;
+
 }
 
 .events {
     background-color: white;
+    padding: 0 5rem;
 }
 
 .artist-event img {
@@ -202,6 +222,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     padding: 0 5rem;
+    margin: 0.5rem 0.5rem;
 }
 
 .artist1,
@@ -217,5 +238,8 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 0.7rem;
 }
 </style>
