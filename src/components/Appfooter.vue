@@ -40,10 +40,10 @@ export default {
             <p>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</p>
             <p>support@maxcoach.com</p>
             <div class="icons">
-                <p><i class="fa-brands fa-square-facebook"></i></p>
-                <p><i class="fa-brands fa-x-twitter"></i></p>
-                <p><i class="fa-brands fa-instagram"></i></p>
-                <p><i class="fa-brands fa-linkedin"></i></p>
+                <p style="margin: 0 0.5rem;"><i class="fa-brands fa-square-facebook"></i></p>
+                <p style="margin: 0 0.5rem;"><i class="fa-brands fa-x-twitter"></i></p>
+                <p style="margin: 0 0.5rem;"><i class="fa-brands fa-instagram"></i></p>
+                <p style="margin: 0 0.5rem;"><i class="fa-brands fa-linkedin"></i></p>
             </div>
         </div>
         <div class="explore">
@@ -62,8 +62,10 @@ export default {
             <p>Terms of services</p>
         </div>
         <div class="instagram">
-            <h6>Instagram</h6>
-            <span style="color: orangered;">@maxcoach</span>
+            <div class="ig-profile">
+                <h6>Instagram</h6>
+                <span style="color: orangered;">@maxcoach</span>
+            </div>
             <div class="images">
                 <img src="../assets/images/artist-blog-03-480x356.jpeg" alt="#">
                 <img style="margin-left: 1rem; margin-right: 1rem;" src="../assets/images/artist-event-03-250x300.jpg"
@@ -85,7 +87,7 @@ export default {
 }
 
 .backgroundsx img {
-    width: 200px;
+    width: 198px;
 }
 
 .bacgrounddx img {
@@ -115,15 +117,16 @@ export default {
 
 .icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 }
 
-.images {
+.images,
+.ig-profile {
     display: flex;
     justify-content: start;
 }
 
 .images img {
-    width: 100px;
+    width: 70px;
 }
 </style>

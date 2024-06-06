@@ -150,7 +150,7 @@ h5 {
 
 .articles {
     background-color: #F5F5F5;
-    padding: 0 5rem;
+    padding: 5rem 5rem;
     position: relative;
 }
 
@@ -219,7 +219,7 @@ h5 {
 
 .events {
     background-color: white;
-    padding: 0 5rem;
+    padding: 5rem 5rem;
 }
 
 .shape13 {
