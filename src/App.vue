@@ -1,8 +1,10 @@
 <script>
 import appmain from './components/appmain.vue';
+import Appfooter from './components/Appfooter.vue';
 export default {
     components: {
-        appmain
+        appmain,
+        Appfooter,
     }
 }
 
@@ -10,6 +12,7 @@ export default {
 
 <template>
     <appmain />
+    <Appfooter />
 </template>
 
 <style scoped></style>

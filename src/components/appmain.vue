@@ -65,6 +65,9 @@ export default {
     <div class="events">
         <h3>Upcoming Events</h3>
         <h5>Let's Work Together</h5>
+        <div class="shape13">
+            <img src="../assets/images/maxcoach-shape-13-96x96.png" alt="">
+        </div>
         <div class="artist-event">
             <div class="workers">
                 <div class="artist1">
@@ -213,6 +216,12 @@ h5 {
     padding: 0 5rem;
 }
 
+.shape13 {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
 .artist-event img {
     width: 150px;
 }
@@ -222,7 +231,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     padding: 0 5rem;
-    margin: 0.5rem 0.5rem;
+    margin-top: 1rem;
 }
 
 .artist1,
