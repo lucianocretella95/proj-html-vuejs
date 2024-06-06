@@ -113,6 +113,11 @@ export default {
 </template>
 
 <style scoped>
+@font-face {
+    font-family: myFirstFont;
+    src: url(/public/Rossela-Demo.ttf);
+}
+
 p {
     margin: 0;
     color: black;
@@ -122,6 +127,7 @@ h3 {
     text-align: center;
     margin-bottom: 0.5rem;
     color: #6ac5f1;
+    font-family: myFirstFont;
 }
 
 h5 {
