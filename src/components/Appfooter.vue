@@ -15,7 +15,7 @@ export default {
 <template>
     <div class="contact">
         <div class="backgroundsx">
-            <img src="../assets/images/artist-shape-color-paint-top-left-300x170.png" alt="#">
+            <img src="../assets/artist-shape-color-paint-top-left-300x170.png" alt="#">
         </div>
         <div class="newsletter">
             <p>Newsletter to get <br> in touch</p>
@@ -29,10 +29,9 @@ export default {
             </div>
         </div>
         <div class="bacgrounddx">
-            <img src="../assets/images/artist-shape-color-paint-bottom-right-300x153.png" alt="#">
+            <img src="../assets/artist-shape-color-paint-bottom-right-300x153.png" alt="#">
         </div>
     </div>
-
     <div class="about-us">
         <div class="address">
             <h6>Address</h6>
@@ -67,10 +66,9 @@ export default {
                 <span style="color: orangered;">@maxcoach</span>
             </div>
             <div class="images">
-                <img src="../assets/images/artist-blog-03-480x356.jpeg" alt="#">
-                <img style="margin-left: 1rem; margin-right: 1rem;" src="../assets/images/artist-event-03-250x300.jpg"
-                    alt="#">
-                <img src="../assets/images/artist-event-02-250x300.jpg" alt="#">
+                <img src="../assets/artist-blog-03-480x356.jpeg" alt="#">
+                <img style="margin-left: 1rem; margin-right: 1rem;" src="../assets/artist-event-03-250x300.jpg" alt="#">
+                <img src="../assets/artist-event-02-250x300.jpg" alt="#">
             </div>
         </div>
     </div>

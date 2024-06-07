@@ -2,12 +2,9 @@
 export default {
     data() {
         return {
-
         };
     },
-
     methods: {
-
     },
 }
 </script>
@@ -17,12 +14,12 @@ export default {
         <h3>Articles and tips</h3>
         <h5>Latest From The Blog</h5>
         <div class="shape">
-            <img src="../assets/images/maxcoach-shape-03.png" alt="" srcset="">
+            <img src="../assets/maxcoach-shape-03.png" alt="" srcset="">
         </div>
         <div class="images">
             <div class="blog1">
                 <div class="card1">
-                    <img src="../assets/images/artist-blog-03-480x356.jpeg" alt="" srcset="">
+                    <img src="../assets/artist-blog-03-480x356.jpeg" alt="" srcset="">
                     <div class="description">
                         <p>Artist</p>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -45,7 +42,7 @@ export default {
             </div>
             <div class="blog3">
                 <div class="card3">
-                    <img src="../assets/images/artist-blog-01-480x356.jpg" alt="" srcset="">
+                    <img src="../assets/artist-blog-01-480x356.jpg" alt="" srcset="">
                     <div class="description">
                         <p>Artist</p>
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -66,12 +63,12 @@ export default {
         <h3>Upcoming Events</h3>
         <h5>Let's Work Together</h5>
         <div class="shape13">
-            <img src="../assets/images/maxcoach-shape-13-96x96.png" alt="">
+            <img src="../assets/maxcoach-shape-13-96x96.png" alt="">
         </div>
         <div class="artist-event">
             <div class="workers">
                 <div class="artist1">
-                    <img src="../assets/images/artist-event-04-250x300.jpg" alt="">
+                    <img src="../assets/artist-event-04-250x300.jpg" alt="">
                     <div class="text">
                         <p>NOV 22, 2020</p>
                         <p>Storytelling Workshop</p>
@@ -79,7 +76,7 @@ export default {
                     </div>
                 </div>
                 <div class="artist2">
-                    <img src="../assets/images/artist-event-03-250x300.jpg" alt="" srcset="">
+                    <img src="../assets/artist-event-03-250x300.jpg" alt="" srcset="">
                     <div class="text">
                         <p>OCT 10, 2020</p>
                         <p>Painting Art Contest 2020</p>
@@ -96,7 +93,7 @@ export default {
                         <p>International Art Fair 2020</p>
                         <p><i class="fa-solid fa-location-dot"></i> Hamburg, Germany</p>
                     </div>
-                    <img src="../assets/images/artist-event-02-250x300.jpg" alt="">
+                    <img src="../assets/artist-event-02-250x300.jpg" alt="">
                 </div>
                 <div class="artist4">
                     <div class="text">
@@ -104,7 +101,7 @@ export default {
                         <p>Street Performance: Call Of Artist</p>
                         <p><i class="fa-solid fa-location-dot"></i> Illinois, US</p>
                     </div>
-                    <img src="../assets/images/artist-event-01-250x300.jpg" alt="" srcset="">
+                    <img src="../assets/artist-event-01-250x300.jpg" alt="" srcset="">
 
                 </div>
             </div>
@@ -163,6 +160,19 @@ h5 {
     z-index: 500;
 }
 
+.blog1 img:hover {
+    transition: width 2s, height 4s;
+    width: 210px;
+    height: 260px;
+}
+
+.blog3 img:hover {
+    transition: width 2s, height 4s;
+    width: 210px;
+    height: 260px;
+}
+
+
 .shape {
     position: absolute;
     left: 0;
@@ -199,7 +209,7 @@ h5 {
 }
 
 .blog2 {
-    background-image: url(../assets/images/artist-blog-02-500x680.jpg);
+    background-image: url(../assets/artist-blog-02-500x680.jpg);
     width: 300px;
     height: 500px;
     padding: 6px;
@@ -231,6 +241,13 @@ h5 {
 .artist-event img {
     width: 150px;
 }
+
+.artist-event img:hover {
+    transition: width 2s, height 4s;
+    width: 170px;
+}
+
+
 
 .workers,
 .workers-2 {
